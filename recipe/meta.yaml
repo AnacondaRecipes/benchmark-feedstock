@@ -14,9 +14,8 @@ build:
 requirements:
   build:
     - cmake
-    - ninja
+    - ninja-base
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
 
 test:
