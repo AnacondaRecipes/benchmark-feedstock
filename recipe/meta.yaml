@@ -14,9 +14,8 @@ build:
 requirements:
   build:
     - cmake
-    - ninja
+    - ninja-base
     - {{ compiler('c') }}
-    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
 
 test:
@@ -45,6 +44,11 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: A microbenchmark support library
+  description: |
+    Google Benchmark is a library to support the benchmarking of functions,
+    micro-architectures, and other systems.
+  dev_url: https://github.com/google/benchmark
+  doc_url: https://github.com/google/benchmark/blob/main/docs/user_guide.md
 
 extra:
   recipe-maintainers:
